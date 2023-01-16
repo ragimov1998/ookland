@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Noto Serif Toto", serif;
+  }
+  ul,li,a{
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  .header {
+    width: 100%;
+    background-color: #fff;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+    p{
+      margin: 0 50px;
+    }
+    .start{
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 11px;
+      color: #fff;
+      background-color: blue;
+      height: 39px;
+      width: 160px;
+      border-radius: 37px;
+      border: 1px solid;
+    }
+}
+.regis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    row-gap: 25px;
+    h3{
+        display: block;
+
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        li{
+            margin: 20px 25px 40px;
+        }
+        .portfolio{
+            text-decoration: underline;
+        }
+    }
+    ul{
+        :hover{
+            text-decoration: underline;
+        }
+    }
+}
+.container{
+  width: 100%;
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+
+  .left{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    row-gap: 25px;
+    img{
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+    }
+  .right{
+    row-gap: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    img{
+      height: 400px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.icons{
+  display: flex;
+  justify-content: center;
+  ul{
+    display: flex;
+    li{
+      margin: 100px 40px;
+    }
+  }
+}
+.left{
+  img:nth-child(2n+1){
+    height: 650px;
+  }
+
+}
+.right{
+  img:nth-child(2n){
+    height: 650px;
+}
+}

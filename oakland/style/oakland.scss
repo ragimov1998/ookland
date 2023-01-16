@@ -1,0 +1,327 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import 'mixin';
+body {
+    font-family: "Noto Serif Toto", serif;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    @include mobile {
+        display: none;
+    }
+    width: 100%;
+    background-color: #fff;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    p {
+        margin: 0 50px;
+    }
+
+    .start {
+        margin-left: 20px;
+        font-weight: 700;
+        font-size: 11px;
+        color: #fff;
+        background-color: blue;
+        height: 39px;
+        width: 160px;
+        border-radius: 37px;
+        border: 1px solid;
+        cursor: pointer;
+    }
+}
+
+.oakland {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    line-height: 100px;
+    position: fixed;
+    z-index: 1000;
+
+    h4 {
+        font-size: 25px;
+        margin: 0 10%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin-right: 11%;
+
+        li {
+            margin: 0 20px;
+
+            .home {
+                text-decoration: underline;
+            }
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.bg {
+    background-image: url(/oakland/img/alex-suprun-N60_1zpWNtU-unsplash.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    .text {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+
+        h1 {
+            color: red;
+            margin: 20px 0;
+            width: 55%;
+            text-align: center;
+            font-size: 60px;
+        }
+
+        button {
+            text-align: center;
+            display: block;
+            margin-top: 25px;
+            width: 155px;
+            height: 60px;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid black;
+            transition: all linear 0.2s;
+            font-size: 15.5px;
+        }
+
+        .contact:hover {
+            opacity: 0.75;
+            cursor: pointer;
+        }
+    }
+
+    .transparent {
+        background-color: transparent;
+        height: 700px;
+        width: 100%;
+    }
+}
+
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 900px;
+    row-gap: 60px;
+
+    h3 {
+        font-size: 50px;
+        color: red;
+
+    }
+
+    p {
+        width: 45%;
+        text-align: center;
+        font-size: 17px;
+
+    }
+
+    img {
+        width: 65%;
+        height: 550px;
+        margin-bottom: 110px;
+    }
+}
+
+.redlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    height: 1000px;
+
+    li {
+        margin: 40px 0;
+        font-size: 55px;
+        color: #fff;
+    }
+}
+
+.bg2 {
+    background-image: url(/oakland/img/alex-suprun-AHnhdjyTNGM-unsplash.webp);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    .transparent {
+        width: 100%;
+        background-color: transparent;
+        height: 1000px;
+        width: 100%;
+
+    }
+
+    .text {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+        row-gap: 60px;
+
+        h3 {
+            font-size: 50px;
+            color: red;
+        }
+
+        p {
+            width: 53%;
+            text-align: center;
+            font-size: 20px;
+        }
+    }
+
+    .pics {
+        display: flex;
+        justify-content: center;
+        column-gap: 25px;
+        background-color: #fff;
+
+        img {
+            width: 25%;
+            height: 450px;
+        }
+    }
+
+    .allprjcts {
+        background-color: #fff;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        button {
+            text-align: center;
+            display: block;
+            margin-top: 25px;
+            width: 200px;
+            height: 60px;
+            background-color: #000;
+            color: #fff;
+            border: 1px solid black;
+            transition: all linear 0.2s;
+            font-size: 15.5px;
+            margin-top: 60px;
+            margin-bottom: 90px;
+        }
+
+        .all:hover {
+            opacity: 0.75;
+            cursor: pointer;
+        }
+    }
+}
+
+.redfooter {
+    background-color: rgb(255 0 0 / 86%);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div{display: flex;
+        flex-direction: column;
+        width: 70%;
+        row-gap: 40px;
+    }
+    h3 {
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        font-size: 60px;
+
+    }
+
+    p {
+        color: #fff;
+
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    height: 515px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    place-content: center;
+
+    h3 {
+        padding-top: 80px;
+        font-size: 50px;
+
+    }
+
+    .contact {
+        display: block;
+        width: 160px;
+        height: 60px;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        transition: all 0.2s linear 0s;
+        font-size: 15.5px;
+        margin: 50px 0px;
+        font-weight: 900;
+    }
+
+    .contact:hover {
+        background-color: rgb(249, 71, 71);
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+
+        li {
+            margin: 60px 55px;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+}

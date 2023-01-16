@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Serif Toto", serif;
+}
+
+ul, li, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  background-color: #fff;
+  line-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header p {
+  margin: 0 50px;
+}
+.header .start {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 11px;
+  color: #fff;
+  background-color: blue;
+  height: 39px;
+  width: 160px;
+  border-radius: 37px;
+  border: 1px solid;
+}
+
+.regis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  row-gap: 25px;
+}
+.regis h3 {
+  display: block;
+}
+.regis ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.regis ul li {
+  margin: 20px 25px 40px;
+}
+.regis ul .portfolio {
+  text-decoration: underline;
+}
+.regis ul :hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  justify-content: center;
+}
+.container .left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  row-gap: 25px;
+}
+.container .left img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .right {
+  row-gap: 25px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+.container .right img {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+.icons ul {
+  display: flex;
+}
+.icons ul li {
+  margin: 100px 40px;
+}
+
+.left img:nth-child(2n+1) {
+  height: 650px;
+}
+
+.right img:nth-child(2n) {
+  height: 650px;
+}/*# sourceMappingURL=zyro.css.map */
