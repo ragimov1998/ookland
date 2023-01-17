@@ -19,6 +19,9 @@ a {
     @include mobile {
         display: none;
     }
+    @include tablet{
+        display: none;
+    }
     width: 100%;
     background-color: #fff;
     line-height: 70px;
@@ -54,16 +57,33 @@ a {
     line-height: 100px;
     position: fixed;
     z-index: 1000;
+    i{
+        display: none;
+        @include mobile {
+            margin: auto 20px;
+            display: block;
+        }
+        @include tablet{
+            margin: auto 20px;
+            display: block;
+        }
+    }
 
     h4 {
         font-size: 25px;
-        margin: 0 10%;
+        margin: auto 10%;
     }
 
     ul {
         display: flex;
         flex-direction: row;
         margin-right: 11%;
+        @include mobile {
+            display: none;
+        }
+        @include tablet{
+            display: none;
+        }
 
         li {
             margin: 0 20px;
@@ -99,6 +119,13 @@ a {
             width: 55%;
             text-align: center;
             font-size: 60px;
+            @include mobile{
+                font-size: 40px;
+                width: 65%;
+            }
+            @include tablet{
+                font-size: 55px;
+            }
         }
 
         button {
@@ -135,11 +162,17 @@ a {
     align-items: center;
     width: 100%;
     height: 900px;
-    row-gap: 60px;
+    row-gap: 30px;
 
     h3 {
         font-size: 50px;
         color: red;
+        @include mobile{
+            font-size: 40px;
+        }
+        @include tablet{
+            font-size: 45px;
+        }
 
     }
 
@@ -147,6 +180,15 @@ a {
         width: 45%;
         text-align: center;
         font-size: 17px;
+        @include mobile{
+            font-size: 20px;
+            width: 70%;
+        }
+        @include tablet{
+            width: 40%;
+            font-size: 19px;
+        }
+
 
     }
 
@@ -154,6 +196,10 @@ a {
         width: 65%;
         height: 550px;
         margin-bottom: 110px;
+        @include tablet{
+            width: 40%;
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -165,11 +211,23 @@ a {
     color: #fff;
     text-align: center;
     height: 1000px;
+    @include mobile{
+        height: 700px;
+    }
+    @include tablet{
+        height: 700px;
+    }
 
     li {
         margin: 40px 0;
         font-size: 55px;
         color: #fff;
+        @include mobile{
+            font-size: 40px;
+        }
+        @include tablet{
+            font-size: 45px;
+        }
     }
 }
 
@@ -197,16 +255,33 @@ a {
         width: 100%;
         height: 500px;
         row-gap: 60px;
+        @include mobile{
+            height: 320px;
+            row-gap: 30px;
+        }
 
         h3 {
             font-size: 50px;
             color: red;
+            @include mobile{
+                font-size: 35px;
+            }
+            @include tablet{
+                font-size: 40px;
+            }
         }
 
         p {
             width: 53%;
             text-align: center;
             font-size: 20px;
+            @include mobile{
+                width: 45%;
+            }
+            @include tablet{
+                width: 52%;
+                font-size: 23px;                
+            }
         }
     }
 
@@ -215,10 +290,28 @@ a {
         justify-content: center;
         column-gap: 25px;
         background-color: #fff;
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         img {
             width: 25%;
             height: 450px;
+            @include mobile{
+                width: 50%;
+                height: 400px;
+            }
+            @include tablet{
+                width: 50%;
+                height: 400px;
+            }
         }
     }
 
@@ -259,16 +352,35 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @include mobile{
+        height: 300px;
+    }
+    @include tablet{
+        height: 300px;
+    }
     div{display: flex;
         flex-direction: column;
         width: 70%;
         row-gap: 40px;
+        @include mobile{
+            width: 45%;
+        }
+        @include tablet{
+            width: 36%;
+            row-gap: 20px;
+        }
     }
     h3 {
         color: #fff;
         font-family: 'Roboto', sans-serif;
         color: #fff;
         font-size: 60px;
+        @include mobile{
+            font-size: 25px;
+        }
+        @include tablet{
+            font-size: 30px;
+        }
 
     }
 
@@ -288,13 +400,24 @@ a {
     text-align: center;
     align-items: center;
     place-content: center;
-
+    @include mobile{
+        height: 300px;
+    }
+    @include tablet{
+        height: 300px;
+    }
     h3 {
         padding-top: 80px;
         font-size: 50px;
-
+        @include margin{
+            padding-bottom: 20px;
+            font-size: 30px;
+        }
+        @include tablet{
+            padding-bottom: 20px;
+            font-size: 35px;
+        }
     }
-
     .contact {
         display: block;
         width: 160px;
@@ -305,8 +428,14 @@ a {
         font-size: 15.5px;
         margin: 50px 0px;
         font-weight: 900;
+        row-gap: 20px;
+        @include mobile{
+            margin: 0;
+        }
+        @include tablet{
+            margin: 0;
+        }
     }
-
     .contact:hover {
         background-color: rgb(249, 71, 71);
         cursor: pointer;
@@ -318,6 +447,12 @@ a {
 
         li {
             margin: 60px 55px;
+            @include mobile{
+                margin: 15px;
+            }
+            @include tablet{
+                margin: 15px;
+            }
 
             i {
                 color: #fff;

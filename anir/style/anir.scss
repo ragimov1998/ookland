@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    line-height: 65px;
+    width: 100%;
+
+    nav {
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+            font-size: 30px;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            column-gap: 50px;
+
+            li {
+                list-style: none;
+
+                a {
+                    color: black;
+                }
+            }
+
+            .home {
+                text-decoration: underline;
+            }
+
+            li:hover {
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.bg {
+    background-image: url(/anir/img/photo-1603561128962-ad67a151eccd\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: inherit;
+    background-attachment: fixed;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        width: 85%;
+        justify-content: center;
+        row-gap: 30px;
+
+        h2 {
+            width: 34%;
+            font-size: 50px;
+            font-weight: 100;
+        }
+
+        h5 {
+            font-size: 25px;
+        }
+
+        .click {
+            width: 230px;
+            height: 50px;
+            background-color: rgb(235, 182, 92);
+            color: #fff;
+            border: 0;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all linear .2s;
+        }
+
+        .click:hover {
+            opacity: .75;
+        }
+    }
+}
+
+main {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .cards {
+        margin-top: 20px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        column-gap: 25px;
+
+        .left {
+            width: 30%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            right: 30%;
+
+            .aubutton {
+                width: 230px;
+                height: 50px;
+                background-color: rgb(235, 182, 92);
+                color: #fff;
+                border: 0;
+                font-size: 15px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: all linear .2s;
+            }
+            .aubutton:hover {
+                opacity: .75;
+            }
+
+            img {
+                width: 65%;
+            }
+        }
+    }
+}
+.text{
+    text-align: center;
+}
+.pics{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+
+    .images{
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        column-gap: 20px;
+        img{
+            width: 30%;
+        }
+        .imgpad{
+            padding-top: 40px;
+        }
+        .botpad{
+            padding-bottom: 0;
+        }
+    }
+    .button{display: inline-block;
+    .view{
+        width: 230px;
+        height: 50px;
+        background-color: rgb(235, 182, 92);
+        color: #fff;
+        border: 0;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all linear .2s;
+        margin-top: 30px;
+        margin-bottom: 60px;
+    }
+}
+}
+.bg2{
+    background-image: url(/anir/img/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    .left{
+        margin:0 50px;
+        width: 50%;
+        ul{
+            li{
+                padding: 30px 0;
+            }
+
+        }
+
+    }
+    .right{
+        width: 50%;
+        ul{
+            width: 65%;
+            li{
+                padding: 30px 0;
+            }
+        }
+
+    }
+}
+
+
