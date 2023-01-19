@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anir</title>
+    <script src="https://kit.fontawesome.com/8096198d37.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <!-- css -->
     <link rel="stylesheet" href="./style/anir.css">
     <header class="top">
@@ -87,11 +92,12 @@
             </ul>
         </div>
     </div>
+    <div class="textbottom">
+        <h4>Our office</h4>
+        <p>19 Cecil Street, #04-00, Singapore 049704</p>
+    </div>
     <section class="map">
-        <div class="text">
-            <h4>Our office</h4>
-            <p>19 Cecil Street, #04-00, Singapore 049704</p>
-        </div>
+
         <div class="container">
             <div class="img">
                 <img src="./img/mapin solu.jpg">
@@ -123,6 +129,72 @@
             </div>
         </div>
     </section>
+    <footer class="foot">
+        <div class="foot__left">
+            <ul>
+                <li>
+                    <h1>Get in touch</h1>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3 class="tittle">Address</h3>
+                </li>
+                <li>
+                    <p>3721 Single Street</p>
+                </li>
+                <li>
+                    <p>Quincy, MA 02169</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h3 class="tittle">Contacts</h3>
+                </li>
+                <li>
+                    <p>123-456-7890</p>
+                </li>
+                <li>
+                    <p>info@anir.com</p>
+                </li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+
+            </ul>
+        </div>
+        <div class="foot__inputs">
+            <label for="name">
+                Name*
+                <br>
+                <input placeholder="Your name" name="name" type="text">
+            </label>
+            <br>
+            <label for="lastnaem">
+                Last name
+                <br>
+                <input placeholder="Your last name" name="lastname" type="text">
+            </label>
+            <br>
+            <label for="email">
+                Your email*
+                <br>
+                <input placeholder="Your email address" name="email" type="email">
+            </label>
+            <br>
+            <label for="address">
+                Message*
+                <br>
+                <textarea name="address" id="address" cols="73" rows="5" placeholder="Enter your message"></textarea>
+
+
+            </label>
+            <br>
+            <button class="submit">Submit</button>
+        </div>
+    </footer>
 
 
 </body>

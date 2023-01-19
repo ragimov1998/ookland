@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 ul,
 li,
 a {
@@ -23,6 +27,9 @@ a {
 }
 .top nav h4 {
   font-size: 30px;
+}
+.top nav h4 a {
+  color: #000;
 }
 .top nav ul {
   display: flex;
@@ -91,15 +98,14 @@ main {
 }
 main .cards {
   margin-top: 20px;
-  width: 80%;
+  width: 100%;
   display: flex;
   justify-content: center;
-  align-content: center;
   -moz-column-gap: 25px;
        column-gap: 25px;
 }
 main .cards .left {
-  width: 30%;
+  width: 26%;
 }
 main .cards .left img {
   width: 100%;
@@ -109,27 +115,42 @@ main .cards .right {
   flex-direction: column;
   justify-content: space-between;
   right: 30%;
+  width: 50%;
 }
-main .cards .right .aubutton {
-  width: 230px;
+main .cards .right h4 {
+  font-size: 40px;
+  font-weight: 100;
+}
+main .cards .aubutton {
+  width: 170px;
   height: 50px;
   background-color: rgb(235, 182, 92);
   color: #fff;
   border: 0;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 19px;
   cursor: pointer;
   transition: all linear 0.2s;
 }
-main .cards .right .aubutton:hover {
+main .cards .aubutton:hover {
   opacity: 0.75;
 }
-main .cards .right img {
+main .cards img {
   width: 65%;
 }
 
 .text {
+  padding-top: 87px;
   text-align: center;
+}
+.text h3 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.text p {
+  font-size: 18px;
+  width: 47%;
+  margin: 20px auto;
+  opacity: 0.7;
 }
 
 .pics {
@@ -174,6 +195,9 @@ main .cards .right img {
   margin-top: 30px;
   margin-bottom: 60px;
 }
+.pics .button .view:hover {
+  opacity: 0.75;
+}
 
 .bg2 {
   background-image: url(/anir/img/bg2.jpg);
@@ -203,9 +227,100 @@ main .cards .right img {
   padding: 30px 0;
 }
 
+.textbottom {
+  width: 90%;
+  margin: 50px auto;
+}
+.textbottom h4 {
+  font-size: 40px;
+  font-weight: 100;
+}
+.textbottom p {
+  text-align: left;
+  margin-top: 20px;
+  opacity: 0.7;
+}
+
 .map {
   width: 100%;
 }
 .map .container {
+  width: 90%;
   display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  margin: 0 auto;
+}
+.map .container .img {
+  width: 50%;
+}
+.map .container .img img {
+  width: 100%;
+  height: 400px;
+}
+.map .container .map {
+  width: 50%;
+}
+
+.foot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.foot__left {
+  width: 40%;
+}
+.foot__left h1 {
+  padding: 50px 0;
+  font-weight: 100;
+}
+.foot__left ul {
+  padding: 35px 0;
+  opacity: 0.8;
+}
+.foot__left .icons {
+  display: flex;
+}
+.foot__left .icons li {
+  margin: 0 10px;
+}
+.foot__left .icons li i {
+  color: #000;
+  font-size: 20px;
+}
+.foot__inputs {
+  width: 40%;
+  margin: auto 0;
+  align-items: center;
+  color: rgb(235, 182, 92);
+}
+.foot__inputs input {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 25px;
+  color: rgb(235, 182, 92);
+  background-color: #e6e3e3;
+  border: 0;
+  outline: none;
+  padding-left: 15px;
+}
+.foot__inputs textarea {
+  margin-bottom: 25px;
+  background-color: #e6e3e3;
+  border: 0;
+  outline: none;
+  padding-left: 14px;
+}
+.foot__inputs .submit {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(235, 182, 92);
+  color: #fff;
+  border: 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+.foot__inputs .submit:hover {
+  background-color: #e6e3e3;
 }/*# sourceMappingURL=anir.css.map */
